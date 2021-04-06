@@ -1,3 +1,5 @@
+
+
 <html>
 
 <head>
@@ -27,7 +29,7 @@
                     <ul id="primary-menu" class="menubox nav-menu">
                         <li class="menu-itembox "><a class="nav__link" href="index.html">Home</a></li>
                         <li class="menu-itembox "><a class="nav__link" href="#about">About</a></li>
-                        <li class="menu-itembox "><a class="nav__link" href="#contactus">Contact Us</a></li>
+                        <li class="menu-itembox "><a class="nav__link" href="#contactus">Contact us</a></li>
                         <li class="menu-itembox "><a class="nav__link activebox" href="Authenticate.html">Login/Register</a>
                         </li>
                     </ul>
@@ -66,8 +68,8 @@
     </div>
     <div style="background-image: url('https://images.westend61.de/0000926064pw/happy-business-people-discussing-in-meeting-at-office-CAVF47174.jpg'); background-size: cover; height:300px;width:100%;background-attachment: fixed;">
     </div>
-
-    <section class="form" id="contactus" style="margin-top:40px; ">
+    
+    <form class="form" id="contactus" style="margin-top:40px;" action="connect.php" method="post">
       
         <div class="container" >
             <div class="form-horizontal">
@@ -79,21 +81,21 @@
                     <label  style="font-size: 30px; color: rgb(184, 196, 117);">Contact Form</label>
                 </div>
                 <div class="form-group alignbox">
-                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <label class="control-label col-sm-2" for="name">Name:</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
                     </div>
                 </div>
                 <div class="form-group alignbox">
                     <label class="control-label col-sm-2" for="head">Enter Title</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="head" placeholder="Enter Heading">
+                        <input type="text" class="form-control" id="head" name="heading" placeholder="Enter Heading">
                     </div>
                 </div>
                 <div class="form-group alignbox">
                     <label class="control-label col-sm-2" for="text">Message</label>
                     <div class="col-sm-10">
-                        <textarea rows="2" class="form-control textheight" placeholder="Enter Message ..."></textarea>
+                        <textarea rows="2" class="form-control textheight" placeholder="Enter Message ..." name="message"></textarea>
                         <!-- <input type="text" class="form-control textheight" id="text"  placeholder="Enter Message ..."> -->
                     </div>
                 </div>
@@ -105,12 +107,13 @@
                     </div>s
                 </div> -->
                 <div class="boxalign">
-                    <button class="button button1">Send Details</button>
+                    <input type="submit" value="Submit Details" class="button button1"></input>
                 </div>
             </div>
         </div>
         
-    </section>
+</form>
+
 
  
 
